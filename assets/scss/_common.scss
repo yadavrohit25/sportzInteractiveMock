@@ -17,7 +17,12 @@
         font-size: 12px;
     }
 }
-.largeTitle{font-size: $font20;}
+.largeTitle{
+    font-size: $font20;
+    @media (max-width: 480px) {
+        font-size: 14px;
+    }
+}
 .x-largeTitle{
     font-size: $font28;
     @media (max-width: 480px) {

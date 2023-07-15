@@ -23,6 +23,9 @@ a {
     z-index: 0;
     position: relative;
     color: $white;
+    @media (max-width: 480px) {
+        min-height: 536px;
+    }
     .bgVector{
         position: fixed;top: 0;bottom: 0;left: 0;right: 0;z-index: 1;
         .doodle{
@@ -113,6 +116,9 @@ a {
         .team{
             display: inline-flex;align-items: center;gap: 20px;font-weight: 700;
             margin-left: auto; margin-right: auto;
+            @media (max-width: 480px) {
+                gap: 6px;
+            }
             .teamlogo{
                 background-color: $white;
                 width: 130px;
@@ -173,8 +179,10 @@ a {
         text-align: center;
         margin: 0px auto 15px auto;
         width: fit-content;
-
         position: relative; z-index: 2;
+        @media (max-width: 480px) {
+            padding: 15px 8px;
+        }
         p{margin-bottom: 0;}
     }
     .stadiumWrap{
@@ -257,13 +265,20 @@ a {
     padding: 40px 135px;
     @media (max-width:1024px) {padding: 40px 60px;}
     @media (max-width:800px) {padding: 40px 50px;}
-    @media (max-width:480px) {padding: 40px 10px;}
+    @media (max-width:480px) {padding: 20px 10px;}
     .headTitle{
         display: flex; justify-content: space-between; margin-bottom: 20px;
+        @media (max-width: 480px) {
+            margin-bottom: 12px;
+        }
         p{font-weight: 600;}
         a{
             text-decoration: underline;
             color: $darkPink; font-size: $font16;
+            font-weight: 500;
+            @media (max-width: 480px) {
+                font-size: 12px;
+            }
         }
     }
     .newsBigWrapper{
@@ -356,6 +371,9 @@ a {
                     margin-bottom: 15px;
                 }
                 .copyMeta{
+                    @media (max-width: 480px) {
+                        margin-bottom: 0px;
+                    }
                     .like{
                         .icon{
                             height: 16px; width: 16px;
@@ -365,15 +383,18 @@ a {
                 }
                 &::after{
                     content: "";
-                position: absolute;
-                bottom: -5px;
-                background: linear-gradient(90deg, $primary 0%, $secondary 100%);
-                display: block;
-                width: 90%;
-                height: 5px;
-                left: 13px;
-                border-radius: 0px 0px 5px 5px;
-                z-index: 1;
+                    position: absolute;
+                    bottom: -5px;
+                    background: linear-gradient(90deg, $primary 0%, $secondary 100%);
+                    display: block;
+                    width: 90%;
+                    height: 5px;
+                    left: 13px;
+                    border-radius: 0px 0px 5px 5px;
+                    z-index: 1;
+                    @media (max-width: 480px) {
+                        left: auto;
+                    }
                 }
             }
         }

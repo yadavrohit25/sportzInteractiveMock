@@ -34,6 +34,11 @@
 .largeTitle {
   font-size: 20px;
 }
+@media (max-width: 480px) {
+  .largeTitle {
+    font-size: 14px;
+  }
+}
 
 .x-largeTitle {
   font-size: 28px;
@@ -106,6 +111,11 @@ a {
   z-index: 0;
   position: relative;
   color: #FFFFFF;
+}
+@media (max-width: 480px) {
+  .scoreBannerWrapper {
+    min-height: 536px;
+  }
 }
 .scoreBannerWrapper .bgVector {
   position: fixed;
@@ -231,6 +241,11 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 480px) {
+  .scoreBannerWrapper .teamWrap .team {
+    gap: 6px;
+  }
+}
 .scoreBannerWrapper .teamWrap .team .teamlogo {
   background-color: #FFFFFF;
   width: 130px;
@@ -308,6 +323,11 @@ a {
   width: fit-content;
   position: relative;
   z-index: 2;
+}
+@media (max-width: 480px) {
+  .scoreBannerWrapper .teamNeeds {
+    padding: 15px 8px;
+  }
 }
 .scoreBannerWrapper .teamNeeds p {
   margin-bottom: 0;
@@ -428,13 +448,18 @@ a {
 }
 @media (max-width: 480px) {
   .latestUpdateWrap {
-    padding: 40px 10px;
+    padding: 20px 10px;
   }
 }
 .latestUpdateWrap .headTitle {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+@media (max-width: 480px) {
+  .latestUpdateWrap .headTitle {
+    margin-bottom: 12px;
+  }
 }
 .latestUpdateWrap .headTitle p {
   font-weight: 600;
@@ -443,6 +468,12 @@ a {
   text-decoration: underline;
   color: #E50695;
   font-size: 16px;
+  font-weight: 500;
+}
+@media (max-width: 480px) {
+  .latestUpdateWrap .headTitle a {
+    font-size: 12px;
+  }
 }
 .latestUpdateWrap .newsBigWrapper {
   display: flex;
@@ -560,6 +591,11 @@ a {
   line-height: 22px;
   margin-bottom: 15px;
 }
+@media (max-width: 480px) {
+  .latestUpdateWrap .newsSmallWrapper .newsCard .copy .copyMeta {
+    margin-bottom: 0px;
+  }
+}
 .latestUpdateWrap .newsSmallWrapper .newsCard .copy .copyMeta .like .icon {
   height: 16px;
   width: 16px;
@@ -576,6 +612,11 @@ a {
   left: 13px;
   border-radius: 0px 0px 5px 5px;
   z-index: 1;
+}
+@media (max-width: 480px) {
+  .latestUpdateWrap .newsSmallWrapper .newsCard .copy::after {
+    left: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
